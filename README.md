@@ -3,7 +3,7 @@
 
 **Maciej Eder**, **Rafał L. Górski**
 
-Poniżej zamieszczamy rysunki z artykułu w wersji kolorowej.
+Poniżej zamieszczamy kolorowe wersje rysunków z artykułu zamieszczonego w _Języku Polskim_.
 
 Artykuł stara się odpowiedzieć na pytanie, czy możliwe jest ustalenie typologii polskich tekstów w oparciu wyłącznie o ich cechy gramatyczne. Dodatkowym celem było ustalenie, czy typologia przyjęta w Narodowym Korpusie Języka Polskiego, oparta na kryteriach pozajęzykowych, rzeczywiście grupuje teksty, które są  do siebie gramatycznie podobne.
 
