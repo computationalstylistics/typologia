@@ -1,5 +1,5 @@
 
-dane = read.csv("typologia_2017-01-7_UTF.csv", sep = "\t", row.names = 1, encoding = "UTF-8")
+dane = read.csv("typologia_2017-01-7_UTF.csv", row.names = 1, encoding = "UTF-8")
 
 colnames(dane) = gsub("\\.", "+", colnames(dane))
 colnames(dane) = gsub("^X", "", colnames(dane))
