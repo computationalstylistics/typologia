@@ -1,5 +1,5 @@
 
-## Typologia tekstów oparta na miarach kwantytatywnych: studium korpusowe o zróżnicowaniu polszczyzny
+# Typologia tekstów oparta na miarach kwantytatywnych: studium korpusowe o zróżnicowaniu polszczyzny
 
 **Maciej Eder**, **Rafał L. Górski**
 
