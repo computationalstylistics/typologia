@@ -28,10 +28,10 @@ _Rys. 2: Analiza głównych czynników. Wersja interaktywna rysunku znajduje si�
 _Rys. 3: Analiza głównych czynników: najmocniejsze predyktory._
 
 
+#### Dodatkowe materiały
+Dane liczbowe użyte w studium znajdują się [tutaj](data/typologia_2017-01-7_UTF.csv)
 
+Skrypt użyty do obliczeń i do wygenerowania ilustracji znajduje się [tutaj](data/kod_do_obrazkow.r)
 
-
-[Figure 4](https://computationalstylistics.github.io/typology_of_texts/rys_4.html)
-
-[Figure 5](https://computationalstylistics.github.io/typology_of_texts/rys_5.html)
+Dodatkowe obrazki: [Rys. 4](data/rys_4.html), [Rys. 5](data/rys_5.html)
 

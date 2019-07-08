@@ -1,11 +1,4 @@
 
-
-library(plotly)
-
-
-
-
-
 dane = read.csv("typologia_2017-01-7_UTF.csv", sep = "\t", row.names = 1, encoding = "UTF-8")
 
 colnames(dane) = gsub("\\.", "+", colnames(dane))
@@ -39,8 +32,6 @@ maxColorValue = 255
 )
 
 #text.types = c("Esej", "Fakt", "Ius", "Konwers", "Lit", "Mmedia", "ND", "Nklas", "Inf-por", "PubKs", "PublDz", "PublPer", "PublReg", "Sejm")
-
-#text.types = sort(unique(gsub("_.*", "", rownames(dane))))
 
 text.types = c("szkice", "fakt", "urzęd", "konwers", "lit", "media", "nd", "nklas", "inf-por", "publKs", "publDz", "publPer", "publReg", "qmow")
 
@@ -117,8 +108,6 @@ dev.off()
 #### Wersje kolorowe na GitHub
 
 
-
-
 # rys. 2
 #
 #
@@ -142,11 +131,9 @@ dev.off()
 
 
 
+#### Wersje interaktywne
 
-
-
-
-
+library(plotly)
 
 # rys. 2
 #
@@ -173,41 +160,16 @@ p
 
 
 
-
-  add_trace(
-    x = x,
-    y = y,
-    marker = list(
-      color = 'rgb(17, 157, 255)',
-      size = 20,
-      line = list(
-        color = 'rgb(231, 99, 250)',
-        width = 2
-      )
+# koniec ############################
 
 
 
 
 
 
+# przeróżne wersje robocze ##########
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# wywalenie najmocniejszych predyktorów:
+# usunięcie najmocniejszych predyktorów:
 
 dane = dane[,!predyktory1]
 
@@ -229,9 +191,6 @@ dev.off()
 # plot interavtively
 p <- plot_ly(x = wynik$x[,1], y = wynik$x[,2], color = gsub("_.*","",rownames(dane)), colors = custom_colors, text = gsub("_.*","",rownames(dane)))
 p
-
-
-
 
 
 
@@ -261,9 +220,6 @@ p
 
 
 
-
-
-
 optymalna_separacja_2 = dane[, names(dane) %in% c(predyktory2, predyktory3)]
 optymalna_separacja = cbind(optymalna_separacja, optymalna_separacja_2)
 
@@ -277,14 +233,5 @@ wynik = prcomp(scale(optymalna_separacja))
 # rys 4
 plot(wynik$x[,2] ~ wynik$x[,1], type = "n", xlab = PC1_lab, ylab = PC2_lab, main = "Analiza głównych czynników")
 points(wynik$x[,1], wynik$x[,2], col=custom_colors[gsub("_.*","",rownames(dane))] , pch = 20 )
-
-
-
-
-
-
-# stary poczciwy biplot:
-# biplot(prcomp(scale(dane)))
-
 
 
