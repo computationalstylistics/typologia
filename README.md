@@ -33,5 +33,5 @@ Dane liczbowe użyte w studium znajdują się [tutaj](data/typologia_2017-01-7_
 
 Skrypt użyty do obliczeń i do wygenerowania ilustracji znajduje się [tutaj](data/kod_do_obrazkow.r)
 
-Dodatkowe obrazki: [Rys. 4](data/rys_4.html), [Rys. 5](data/rys_5.html)
+Dodatkowe interaktywne obrazki: [Rys. 4](rys_4.html), [Rys. 5](rys_5.html)
 
