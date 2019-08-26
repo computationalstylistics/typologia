@@ -86,9 +86,9 @@ zakres.obrazka = c(min(wynik$rotation[,1]) + 0.2 * min(wynik$rotation[,1]), max(
 #
 #
 png("Rys__2.png", width = 9, height = 7, units = "in", res = 300)
-plot(wynik$x[,2] ~ wynik$x[,1], type = "n", xlab = PC1_lab, ylab = PC2_lab, main = "Analiza głównych czynników", xlim = c(-12,20))
+plot(wynik$x[,2] ~ wynik$x[,1], type = "n", xlab = PC1_lab, ylab = PC2_lab, main = "", xlim = c(-12,20))
 points(wynik$x[,1], wynik$x[,2], pch = as.numeric(factor(gsub("_.*","",rownames(dane)))), col = grey(as.numeric(factor(gsub("_.*","",rownames(dane))))/14) )
-legend("topright", legend = names(custom_colors), text.col = grey(as.numeric(factor(text.types))/14),  pch = as.numeric(factor(text.types)), col = grey(as.numeric(factor(text.types))/14), bty = "n")
+legend("topright", legend = sort(text.types), text.col = grey(as.numeric(factor(sort(text.types)))/14),  pch = as.numeric(factor(sort(text.types))), col = grey(as.numeric(factor(sort(text.types)))/14), bty = "n")
 dev.off()
 
 # rys. 3
@@ -96,7 +96,7 @@ dev.off()
 #
 png("Rys__3.png", width = 9, height = 7, units = "in", res = 300)
 custom_colors1 = as.character(factor(c("darkgrey","black"))[as.numeric(predyktory1)+1])
-plot(wynik$rotation[,2] ~ wynik$rotation[,1], type = "n", xlim = zakres.obrazka, xlab = PC1_lab, ylab = PC2_lab, main = "Analiza głównych czynników (ładunki)")
+plot(wynik$rotation[,2] ~ wynik$rotation[,1], type = "n", xlim = zakres.obrazka, xlab = PC1_lab, ylab = PC2_lab, main = "")
 segments(0,0,wynik$rotation[,1], wynik$rotation[,2], col = "lightblue")
 text(wynik$rotation[,1], wynik$rotation[,2], labels = colnames(dane), col = custom_colors1)
 dev.off()
